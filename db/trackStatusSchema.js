@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const trackStatusSchema = new mongoose.Schema({
-    claimID:{
+    claimId:{
         type: String,
         required: true,
         unique: true
