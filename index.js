@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.post('/fileClaim', async (req, res) => {
     const  body= req.body;
 
-    const claim = await fileClaim1.fileClaim({
+    const claim = await fileClaim1.create({
         date: body.date,
         location: body.location,
         damageDesc: body.damageDesc,
@@ -27,7 +27,7 @@ app.post('/fileClaim', async (req, res) => {
 app.post('/trackClaim', async (req, res) => {
     const  body= req.body;
 
-    const track = await trackStatus1.trackClaim({
+    const track = await trackStatus1.create({
         claimId: body.claimId,
         date: body.date,
         description: body.description,
@@ -41,7 +41,7 @@ app.post('/trackClaim', async (req, res) => {
 app.post('/contact', async (req, res) => {
     const  body= req.body;
 
-    const contact = await contactAgent1.contact({
+    const contact = await contactAgent1.create({
         concern: body.concern,
     });
 
