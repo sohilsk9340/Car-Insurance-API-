@@ -3,7 +3,7 @@ const fileClaimSchema = require("./fileClaimSchema");
 const trackStatusSchema = require("./trackStatusSchema");
 const contactAgentSchema = require("./contactAgentSchema");
 
-const DB_NAME = process.env.DB_NAME || "insurance";
+const DB_NAME = process.env.DB_NAME || "insurance1";
 const URI = process.env.MONGO_URI || "mongodb+srv://insurance:insurance@cluster0.elwmgmk.mongodb.net";
 const MONGO_URI = `${URI}/${DB_NAME}`;
 

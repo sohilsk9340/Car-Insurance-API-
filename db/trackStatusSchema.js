@@ -4,7 +4,7 @@ const trackStatusSchema = new mongoose.Schema({
     claimId:{
         type: String,
         required: true,
-        unique: true
+      
     },
     date:{
         type: String
